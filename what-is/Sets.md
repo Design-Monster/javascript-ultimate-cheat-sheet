@@ -1,0 +1,1 @@
+The Set object is a collection of items which are unique i.e no element can be repeated. Set in ES6 are ordered: elements of the set can be iterated in the insertion order. Set can store any types of values whether primitive or objects.
