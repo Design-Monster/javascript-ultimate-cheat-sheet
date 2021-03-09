@@ -1,4 +1,4 @@
-// Put all unique items from given arguments into an array, in the same order they were in (just omitting duplicates).  This will be an array of arrays.
+// Put all unique items from given arguments into an array, in the same order they were in and omit all duplicates. This will be an array of arrays.
 
 function uniqueInOrder(somethingIterable){
   const newUniqueInOrderSet = new Set(somethingIterable.flat());

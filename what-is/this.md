@@ -1,28 +1,14 @@
 
-THIS. IN JS
 
-Can mean many things - it comes down to function invocation (how you call your function).  So….it depends.
+1 - If the new keyword is used when calling the function, this inside the function is a brand new object.
 
-GLOBAL CONTEXT = outside a function
-Usually refers to window in the browser, or the global object.
+2 - If apply, call, or bind are used to call/create a function, this inside the function is the object that is passed in as the argument.
 
-FUNCTION CONTEXT = inside a function
-Essentially its value depends on the binding of the current execution context - MEANING, it refers to the object it belongs to.
+3 - If a function is called as a method, such as obj.method() — this is the object that the function is a property of.
 
+4 - If a function is invoked as a free function invocation, meaning it was invoked without any of the conditions present above, this is the global object. In a browser, it is the window object. If in strict mode ('use strict'), this will be undefined instead of the global object.
 
+5 - If multiple of the above rules apply, the rule that is higher wins and will set the this value.
 
-“Ryan went to the fridge because he was hungry.”
+6 - If the function is an ES2015 arrow function, it ignores all the rules above and receives the this value of its surrounding scope at the time it is created.
 
-he = this which = Ryan, basically.
-
-let person = {
-	firstName = ‘Ryan’,
-	lastName = “Roderick’,
-	fullName = function() {
-		console.log(this.firstName + this.lastName);
-		console.log(person.firstName + person.lastName);
- // THESE WILL EQUAL THE SAME THING
-	}
-}
-
-person.fullName();

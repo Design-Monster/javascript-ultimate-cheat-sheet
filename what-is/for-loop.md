@@ -23,6 +23,7 @@ for (let program = 5; program < 11; program++) {
 }
 
 The typical “for loop” includes an iterator variable that usually appears in all three expressions. The iterator variable is initialized, checked against the stopping condition, and assigned a new value on each loop iteration. Iterator variables can have any name, but it’s best practice to use a descriptive variable name.
+
 If you wanted to loop through the full contents of an array, you would write the for loop stopping condition using .length:
 
 for (let i = 0; i < array.length; i++) {

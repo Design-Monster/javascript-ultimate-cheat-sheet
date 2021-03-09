@@ -15,7 +15,10 @@ outerFunc();
 
 
 Common use cases for closures:
-Giving objects data privacy.  
-Currying
-Callbacks
+
+1 - Giving objects data privacy  
+
+2 - Currying
+
+3 - Callbacks
 
