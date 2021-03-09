@@ -39,6 +39,7 @@ let anArrayOfNames = [
 let finalUniqueValuesArray = findUniqueInArrayOfArrays(anArrayOfNames);
 console.log(finalUniqueValuesArray);
 
+findUniqueInArrayOfArrays(someArray);
 
 // Comment out from here down and use vscode 'code-runner' extension to run the function in the vscode terminal and see the output by pressing control + option + n together.
 
