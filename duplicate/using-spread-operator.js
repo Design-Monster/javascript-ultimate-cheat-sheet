@@ -4,9 +4,9 @@ const duplicate = (arr) => [...arr, ...arr];
 
 // it is the same as:
 
-// function duplicate(arr) {
-//   return [...arr, ...arr]
-// }
+function duplicate(arr) {
+  return [...arr, ...arr]
+}
 
 let output = duplicate([1, 2, 3, 4, 5]); 
 console.log(output);
