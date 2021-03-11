@@ -1,0 +1,1 @@
+Memoization is an optimization technique that we can always use if we know that our algorithm will call the same function with the same parameters multiple times. Instead of execution of such function, we can “remember” the result of the previous execution.
