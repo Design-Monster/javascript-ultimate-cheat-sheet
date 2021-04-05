@@ -2,15 +2,14 @@
 
 function uniqueInOrder(somethingIterable){
   const newUniqueInOrderSet = new Set(somethingIterable);
-  console.log(newUniqueInOrderSet);
 
   return [...newUniqueInOrderSet];
 }
 
 let anArrayOfNumbers = [1,1,2,5,10,12,1,2,5,3,4];
 
-let finalArrayWithUniqueInOrder = uniqueInOrder(anArrayOfNumbers);
-console.log(finalArrayWithUniqueInOrder);
+let output = uniqueInOrder(anArrayOfNumbers);
+console.log(output);
 
 // Which gives you:
 
@@ -28,8 +27,8 @@ function uniqueInOrder(somethingIterable){  //creating a function and naming it 
 
 let anArrayOfNumbers = [1,1,2,5,10,12,5,3,4];
 
-let finalArrayWithUniqueInOrder = uniqueInOrder(anArrayOfNumbers);
-console.log(finalArrayWithUniqueInOrder);
+let output = uniqueInOrder(anArrayOfNumbers);
+console.log(output);
 
 // Which gives you:
 

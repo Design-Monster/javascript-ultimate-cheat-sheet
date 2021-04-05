@@ -2,15 +2,15 @@
 
 // For example, if you calculate the symmetric difference between {1, 2, 3} and {2, 3, 4}, the output will be {1, 4}.
 
-//This is the best way
+// This is the best way
 
 function arrayDiff(a, b) {
   const first = new Set(a);
   const second = new Set(b);
 
   return [
-      ...a.filter(i => !second.has(i)),
-      ...b.filter(i => !first.has(i))
+    ...a.filter(i => !second.has(i)),
+    ...b.filter(i => !first.has(i))
   ];
 }
 
