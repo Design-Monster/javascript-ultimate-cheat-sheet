@@ -1,9 +1,10 @@
 function addTwoNumbers(num1, num2) {
-  return num1 + num2 
-} 
+  return num1 + num2
+}
 
-let answer = addTwoNumbers(5, 15);
-console.log(answer);
+let sum = addTwoNumbers(5, 15);
+console.log(sum);
+
 // Which gives you:
 
 // [20]
