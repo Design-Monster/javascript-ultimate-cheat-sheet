@@ -1,18 +1,15 @@
-A closure is a function that captures variables from its lexical scope. In simple words, the closure remembers the variables from the place where it is defined, no matter where it is executed.
+Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
 
-	function outerFunc() {
-  	// the outer scope
-  	let outerVar = 'I am outside!';
-
-  	function innerFunc() {
-    	// the inner scope
-      console.log(outerVar); // => logs "I am outside!"
- 	  }
-	innerFunc();
+function pam() {
+    var name = "Pam Beesly";
+    function displayName() {
+        alert (name);
+    }
+    displayName(); 
 }
+pam();
 
-outerFunc();
-
+The inner function displayName is able to display "Pam Beesly" without defining the variable itself because it remembers the variable that was already defined in the outer function of pam.
 
 Common use cases for closures:
 
