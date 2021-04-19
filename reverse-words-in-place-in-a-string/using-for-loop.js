@@ -18,20 +18,30 @@ function reverseWordsInPlace(string) {
 let output = reverseWordsInPlace("Hello I am a string");
 console.log(output);
 
+//  Which gives you:
+
+//  [ 'Hello', 'I', 'am', 'a', 'string' ]
+//  olleH I ma a gnirts
+
 
 // Comment out from here down and use vscode 'code-runner' extension to run the function in the vscode terminal and see the output by pressing control + option + n together.
 
 // Breakdown:
 
-// function reverseWordsInPlace(string) {
-//   let wordsArray = string.split(" ");
-//   console.log(wordsArray);
-//   for (let i = 0; i < wordsArray.length; i++) {
-//     wordsArray[i] = wordsArray[i].split('').reverse().join('');
-//   }
-//   return wordsArray.join(' ');
-// }
+function reverseWordsInPlace(string) {
+  let wordsArray = string.split(" ");
+  console.log(wordsArray);
+  for (let i = 0; i < wordsArray.length; i++) {
+    wordsArray[i] = wordsArray[i].split('').reverse().join('');
+  }
+  return wordsArray.join(' ');
+}
 
 
-// let output = reverseWordsInPlace("Hello I am a string");
-// console.log(output);
+let output = reverseWordsInPlace("Hello I am a string");
+console.log(output);
+
+//  Which gives you:
+
+//  [ 'Hello', 'I', 'am', 'a', 'string' ]
+//  olleH I ma a gnirts
