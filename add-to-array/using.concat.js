@@ -1,0 +1,24 @@
+
+
+function addDataToExistingArray(data, existingArray) {
+  return existingArray.concat(data)  
+}
+
+let newData = 25; 
+let array = [50, 25, 10];
+
+console.log(addDataToExistingArray(newData, array));
+
+
+// // Comment out from here down and use vscode 'code-runner' extension to run the function in the vscode terminal and see the output by pressing control + option + n together.
+
+// // Breakdown:
+
+function addDataToExistingArray(data, existingArray) {
+  return existingArray.concat(data) // Return "existingArray" which has the new data added to the end of it with "concat".
+}
+
+let newData = 25; // Creating a variable with let (meaning it can be changed) which we named "newData" = to 25.
+let array = [50, 25, 10]; // Creating a array[] variable named "array" = to [50, 25, 10].
+
+console.log(addDataToExistingArray(newData, array)); // We are console logging the functions final value with set arguments of 25 for "data" and [50, 25, 10] for existingArray.
