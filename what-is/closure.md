@@ -1,4 +1,4 @@
-Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
+Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned. In this case the function displayName (the inner function) can access all of the function "pam" including its variables and parameters. 
 
 function pam() {
     var name = "Pam Beesly";
