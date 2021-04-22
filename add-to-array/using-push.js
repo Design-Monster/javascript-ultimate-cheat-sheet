@@ -21,4 +21,6 @@ function addNewDataToExistingArray(data, existingArray) { // Creating a function
 let newData = 25; // Creating a variable with let (meaning it can be changed) which we named "newData" and gave it a value of 25.
 let array = [50, 25, 10]; // Creating a variable named "array" giving it a value of an array with 3 indexes [50, 25, 10].
 
+
 console.log(addNewDataToExistingArray(newData, array)); // We are console logging the functions final value with set arguments of 25 for "newData" and [50, 25, 10] for array. Those values are set up above in the variable. 
+
