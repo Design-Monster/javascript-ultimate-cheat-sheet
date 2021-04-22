@@ -1,5 +1,3 @@
-
-
 function addDataToExistingArray(data, existingArray) {
   return existingArray.concat(data)  
 }
@@ -10,9 +8,10 @@ let array = [50, 25, 10];
 console.log(addDataToExistingArray(newData, array));
 
 
+
 // // Comment out from here down and use vscode 'code-runner' extension to run the function in the vscode terminal and see the output by pressing control + option + n together.
 
-// // Breakdown:
+// // Breakdown
 
 function addDataToExistingArray(data, existingArray) {
   return existingArray.concat(data) // Return "existingArray" which has the new data added to the end of it with "concat". Concat is a built in method in JavaScript for arrays.
