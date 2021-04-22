@@ -1,5 +1,5 @@
 function addNewDataToExistingArray(data, existingArray) {
-  [existingArray.push(data)];
+  existingArray.push(data);
   return existingArray
 }
 
@@ -14,11 +14,13 @@ console.log(addNewDataToExistingArray(newData, array));
 // // Breakdown:
 
 function addNewDataToExistingArray(data, existingArray) { // Creating a function named "addNewDataToExistingArray"
-  [existingArray.push(data)]; // Using "push" to add data to the end of an existing array
+  existingArray.push(data); // Using "push" to add data to the end of an existing array. Push is a built in method in JavaScript for arrays.
   return existingArray // Return "existingArray" which has the new data added to the end of it with "push".
 }
 
-let newData = 25; // Creating a variable with let (meaning it can be changed) which we named "newData" = to 25.
-let array = [50, 25, 10]; // Creating a array[] variable named "array" = to [50, 25, 10].
+let newData = 25; // Creating a variable with let (meaning it can be changed) which we named "newData" and gave it a value of 25.
+let array = [50, 25, 10]; // Creating a variable named "array" giving it a value of an array with 3 indexes [50, 25, 10].
 
-console.log(addNewDataToExistingArray(newData, array)); // We are console logging the functions final value with set arguments of 25 for "data" and [50, 25, 10] for existingArray.
+
+console.log(addNewDataToExistingArray(newData, array)); // We are console logging the functions final value with set arguments of 25 for "newData" and [50, 25, 10] for array. Those values are set up above in the variable. 
+

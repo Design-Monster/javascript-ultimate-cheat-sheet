@@ -1,4 +1,3 @@
-
 Currying happens when a function returns another function until the arguments are fully supplied.
 	
 	function multiply(a) {
